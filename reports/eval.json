@@ -1,0 +1,228 @@
+{
+  "model_version": "r18-logreg-16e238db",
+  "review_threshold": 0.51,
+  "n": 210,
+  "accuracy": 0.9333,
+  "coverage": 0.981,
+  "accepted_accuracy": 0.9417,
+  "needs_review_accuracy": 0.5,
+  "per_class": {
+    "AnnualCrop": {
+      "precision": 0.9032258064516129,
+      "recall": 0.9333333333333333,
+      "f1-score": 0.9180327868852459,
+      "support": 30.0
+    },
+    "Forest": {
+      "precision": 0.967741935483871,
+      "recall": 1.0,
+      "f1-score": 0.9836065573770492,
+      "support": 30.0
+    },
+    "Highway": {
+      "precision": 0.84375,
+      "recall": 0.9,
+      "f1-score": 0.8709677419354839,
+      "support": 30.0
+    },
+    "Industrial": {
+      "precision": 1.0,
+      "recall": 0.8666666666666667,
+      "f1-score": 0.9285714285714286,
+      "support": 30.0
+    },
+    "Residential": {
+      "precision": 0.967741935483871,
+      "recall": 1.0,
+      "f1-score": 0.9836065573770492,
+      "support": 30.0
+    },
+    "River": {
+      "precision": 0.8666666666666667,
+      "recall": 0.8666666666666667,
+      "f1-score": 0.8666666666666667,
+      "support": 30.0
+    },
+    "SeaLake": {
+      "precision": 1.0,
+      "recall": 0.9666666666666667,
+      "f1-score": 0.9830508474576272,
+      "support": 30.0
+    },
+    "accuracy": 0.9333333333333333,
+    "macro avg": {
+      "precision": 0.9355894777265744,
+      "recall": 0.9333333333333333,
+      "f1-score": 0.9335003694672216,
+      "support": 210.0
+    },
+    "weighted avg": {
+      "precision": 0.9355894777265745,
+      "recall": 0.9333333333333333,
+      "f1-score": 0.9335003694672215,
+      "support": 210.0
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "AnnualCrop",
+      "Forest",
+      "Highway",
+      "Industrial",
+      "Residential",
+      "River",
+      "SeaLake"
+    ],
+    "rows_true_cols_pred": [
+      [
+        28,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        30,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        27,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        26,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        30,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        2,
+        0,
+        0,
+        26,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        29
+      ]
+    ]
+  },
+  "mistakes": [
+    {
+      "file": "tile_036.png",
+      "true": "River",
+      "pred": "Highway",
+      "confidence": 0.5881
+    },
+    {
+      "file": "tile_040.png",
+      "true": "River",
+      "pred": "Forest",
+      "confidence": 0.3475
+    },
+    {
+      "file": "tile_046.png",
+      "true": "River",
+      "pred": "Highway",
+      "confidence": 0.8633
+    },
+    {
+      "file": "tile_057.png",
+      "true": "River",
+      "pred": "AnnualCrop",
+      "confidence": 0.8919
+    },
+    {
+      "file": "tile_103.png",
+      "true": "Industrial",
+      "pred": "Highway",
+      "confidence": 0.8212
+    },
+    {
+      "file": "tile_111.png",
+      "true": "Industrial",
+      "pred": "River",
+      "confidence": 0.8573
+    },
+    {
+      "file": "tile_114.png",
+      "true": "Industrial",
+      "pred": "Highway",
+      "confidence": 0.5175
+    },
+    {
+      "file": "tile_120.png",
+      "true": "Industrial",
+      "pred": "Residential",
+      "confidence": 0.4499
+    },
+    {
+      "file": "tile_130.png",
+      "true": "AnnualCrop",
+      "pred": "River",
+      "confidence": 0.9243
+    },
+    {
+      "file": "tile_149.png",
+      "true": "AnnualCrop",
+      "pred": "River",
+      "confidence": 0.8576
+    },
+    {
+      "file": "tile_174.png",
+      "true": "SeaLake",
+      "pred": "Highway",
+      "confidence": 0.6204
+    },
+    {
+      "file": "tile_187.png",
+      "true": "Highway",
+      "pred": "AnnualCrop",
+      "confidence": 0.8242
+    },
+    {
+      "file": "tile_196.png",
+      "true": "Highway",
+      "pred": "AnnualCrop",
+      "confidence": 0.7795
+    },
+    {
+      "file": "tile_206.png",
+      "true": "Highway",
+      "pred": "River",
+      "confidence": 0.7546
+    }
+  ]
+}
